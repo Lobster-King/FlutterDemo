@@ -1,0 +1,10 @@
+platform :ios ,'8.0'
+
+target 'FlutterDemo' do
+    
+pod 'AFNetworking'
+
+flutter_application_path = '../demoflutter/'
+eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+
+end
